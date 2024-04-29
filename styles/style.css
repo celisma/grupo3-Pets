@@ -1,0 +1,341 @@
+/*sets globales*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.flex{
+  display: flex;
+}
+
+.grid{
+  display: grid;
+}
+
+
+
+/*---------HEADER---------*/
+
+.navbar{
+  background-color: #f8f9fd;
+  height: 60px;
+  padding: 0.5rem;
+}
+
+
+.nav-item a{
+  color: #1667F7;
+  transition: 0.1s ;
+  
+}
+
+.nav-item a:hover{
+
+  color: black;
+  border-bottom: 1px solid #1667F7;
+}
+
+
+.login-button{
+  background-color:#1667F7;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: 0.3s background-color ;
+}
+
+.login-button:hover{
+  background-color:white;
+  color: black;
+  border: solid 1px #1667F7;
+}
+
+
+
+/*-------------HERO-SECTION--------------*/
+
+
+
+.hero{
+  width: 100vw;
+  height: 80vh;
+  margin-top: 50px;
+  background-image: url(../images/hero/probar/pexels-tima-miroshnichenko-6235108.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  
+}
+.hero .titulo {
+  margin-left: 300px;
+}
+
+.hero .titulo h1{
+  font-size: 48px;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 900;
+  color: #FFFFFF;
+}
+
+.hero .titulo a{
+  font-family: "Playfair Display", serif;
+  text-decoration: none;
+  background-color: #1667F7;
+  padding:  7px;
+  border-radius: 5px;
+  color: white;
+  transition: 0.3 background-color;
+}
+
+.hero .titulo a:hover{
+  background-color:white;
+  color: #1667F7;
+}
+
+
+/*-------------cards--------------*/
+/* 
+.cards {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #F8F9FD;
+}
+
+.card-1{
+  width: 350px;
+  height: 150px;
+  background-color:  #d8d6d1a6;
+  margin:  8px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+.card-1 div a{
+  text-decoration: none;
+}
+
+
+
+.card-1  img{
+  height: 40px;
+  margin: 10px;
+} */
+
+/*-------------tarjetitas--------------*/
+
+.tarjetitas{
+  background-image: url(../images/tarjeta/background.png);
+  background-position: center;
+  background-size: contain;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.tarjetitas div{
+  margin: 20px;
+}
+.columna-1{
+  grid-template-columns: repeat(2,1fr);
+  justify-content: center;
+  align-items: center;
+}
+.columna-1 div{
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 18px;
+  background-color: white;
+  margin: 8px;
+  
+}
+
+
+.columna-2{
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
+
+
+.tarjetitas div img{
+  height: 100px;
+  width: 200px;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+
+}
+
+/*-------------servicios--------------*/
+.servicios{
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  background-color: #d8d6d1a6;
+}
+.serv{
+  width: 300px;
+  margin: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+
+
+.serv img{
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  object-position: center;
+  
+}
+
+.serv h3{
+  display: flex;
+  justify-content: center;
+  background-color: #312722d0;
+  color: #FFFFFF;
+  
+}
+
+
+
+/*-------------baner--------------*/
+.baner{
+  background-image: url(../images/hero/karsten-winegeart-5PVXkqt2s9k-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+
+.col2{
+  grid-template-columns: repeat(2, 1fr);
+
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.col2 div{
+  background-color: #ffffff2f;
+  color: white;
+  border-radius: 10px;
+  height: 160px;
+  width:300px;
+  justify-content: center;
+  align-items: center;
+}
+
+/*-------------Testimonios--------------*/
+.testimonios{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.test{
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/*-------------Log-Testimonios---------------*/
+
+.log-testimonios{
+  background-color: #FBFBFB;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  position: relative;
+}
+
+
+
+.log img{
+  width: 130px;
+  margin-right: 50px;
+}
+
+
+/*-------------What---------------*/
+
+.what{
+  background-image: url(../images/tarjeta/background.png);
+  background-position: center;
+  background-size: contain;
+  height: 800px;
+  margin-top: 30px;
+  
+
+}
+
+.circulo img{
+  height: 190px;
+  object-position: center;
+  object-fit: cover;
+  border-radius: 100px;
+ 
+}
+.tit{
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.tar{
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.tar div{
+  margin: 0px 100px;
+  width: 200px;
+}
+
+
+.circulo{
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+}
+
+
+
+/*-------------Footer---------------*/
+footer {
+  border-top: solid black 1px;
+  border-bottom: 0px;
+  background-color: #242424;
+  color: white;
+}
+
+.redes {
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.contacto {
+  
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
