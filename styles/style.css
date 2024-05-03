@@ -14,7 +14,11 @@
   display: grid;
 }
 
-
+body{
+  background-image: url(../images/tarjeta/background\ 2.png);
+  background-position: center;
+  background-size: contain;
+}
 
 /*---------HEADER---------*/
 
@@ -22,6 +26,8 @@
   background-color: #f8f9fd;
   height: 60px;
   padding: 0.5rem;
+  margin: 10px 12px;
+  border-radius: 14px;
 }
 
 
@@ -63,7 +69,7 @@
 .hero{
   width: 100vw;
   height: 80vh;
-  margin-top: 50px;
+  
   background-image: url(../images/hero/probar/pexels-tima-miroshnichenko-6235108.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -100,45 +106,10 @@
 }
 
 
-/*-------------cards--------------*/
-/* 
-.cards {
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  background-color: #F8F9FD;
-}
-
-.card-1{
-  width: 350px;
-  height: 150px;
-  background-color:  #d8d6d1a6;
-  margin:  8px;
-  border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-
-.card-1 div a{
-  text-decoration: none;
-}
-
-
-
-.card-1  img{
-  height: 40px;
-  margin: 10px;
-} */
 
 /*-------------tarjetitas--------------*/
 
 .tarjetitas{
-  background-image: url(../images/tarjeta/background.png);
-  background-position: center;
-  background-size: contain;
   height: 600px;
   justify-content: center;
   align-items: center;
@@ -159,6 +130,7 @@
   height: 180px;
   width: 160px;
   border-radius: 10px;
+  box-shadow: 3px 3px 42px;
   margin: 8px;
   padding: 6px;
   
@@ -215,13 +187,11 @@
   padding: 4px 8px;
 }
 
-/*-------------servicios--------------*/
+/*-------------Galeria--------------*/
 .servicios{
   justify-content: center;
   align-items: center;
   height: 400px;
-  background-image: url(../images/tarjeta/background\ 2.png);
-  background-size: contain;
 }
 .serv{
   width: 300px;
@@ -238,6 +208,7 @@
   object-fit: cover;
   object-position: center;
   border-radius: 12px;
+  box-shadow: 13px 13px 42px;
   margin: 10px;
   
 }
@@ -251,116 +222,64 @@
 }
 
 
-
-/*-------------baner--------------*/
-/* .baner{
-  background-image: url(../images/hero/karsten-winegeart-5PVXkqt2s9k-unsplash.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 70vh;
-  justify-content: space-evenly;
-  align-items: center;
-  
-}
-
-.col2{
-  grid-template-columns: repeat(2, 1fr);
-
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-
-.col2 div{
-  background-color: #ffffff2f;
-  color: white;
-  border-radius: 10px;
-  height: 160px;
-  width:300px;
-  justify-content: center;
-  align-items: center;
-} */
-
-/*-------------Testimonios--------------*/
-.testimonios{
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.test{
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-
-
-
 /*-------------What---------------*/
 
 .what{
-  background-image: url(../images/tarjeta/background.png);
-  background-position: center;
-  background-size: contain;
   height: 800px;
   margin-top: 30px;
-  
-
 }
 
-.circulo img{
-  height: 190px;
-  object-position: center;
-  object-fit: cover;
-  border-radius: 100px;
- 
-}
+
 .tit{
   height: 300px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.tar{
-  justify-content: center;
-  align-items: center;
+
+
+.circulo img{
+  height: 200px;
+  width: 200px;
+  object-position: center;
+  object-fit: cover;
   
 }
 
+.tar{
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 .tar div{
-  margin: 0px 100px;
+  
   width: 200px;
+
 }
 
+.carta{
+  margin: 0px 60px;
+}
 
 .circulo{
   height: 200px;
   width: 200px;
   border-radius: 100px;
-}
-/*-------------banner---------------*/
-
-.banner{
-  background-image: url(../images/banner/banner.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 250px;
+  overflow: hidden;
   
-  justify-content: center;
-  align-items: center;
 }
+
+
 
 
 /*-------------Log-Testimonios---------------*/
 
 .log-testimonios{
-  background-image: url(../images/log-testimonios/2.png);
+  background-image: url(../images/log-testimonios/2-removebg.png);
   background-position: center;
   background-size: cover;
-  justify-content: center;
+  justify-content: start;
+  margin-left: 150px;
   align-items: center;
   height: 40vh;
   position: relative;
@@ -395,3 +314,69 @@ footer {
   margin-top: 10px;
 }
 
+
+/*-------------cards--------------*/
+/* 
+.cards {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #F8F9FD;
+}
+
+.card-1{
+  width: 350px;
+  height: 150px;
+  background-color:  #d8d6d1a6;
+  margin:  8px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+.card-1 div a{
+  text-decoration: none;
+}
+
+
+
+.card-1  img{
+  height: 40px;
+  margin: 10px;
+} */
+
+
+
+
+/*-------------baner--------------*/
+/* .baner{
+  background-image: url(../images/hero/karsten-winegeart-5PVXkqt2s9k-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+
+.col2{
+  grid-template-columns: repeat(2, 1fr);
+
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.col2 div{
+  background-color: #ffffff2f;
+  color: white;
+  border-radius: 10px;
+  height: 160px;
+  width:300px;
+  justify-content: center;
+  align-items: center;
+} */
