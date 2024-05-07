@@ -208,7 +208,8 @@ body{
   object-fit: cover;
   object-position: center;
   border-radius: 12px;
-  box-shadow: 13px 13px 42px;
+  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
   margin: 10px;
   
 }
@@ -266,7 +267,8 @@ body{
   width: 200px;
   border-radius: 100px;
   overflow: hidden;
-  
+  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 
 
@@ -315,68 +317,91 @@ footer {
 }
 
 
-/*-------------cards--------------*/
-/* 
-.cards {
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  background-color: #F8F9FD;
-}
-
-.card-1{
-  width: 350px;
-  height: 150px;
-  background-color:  #d8d6d1a6;
-  margin:  8px;
-  border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
+/*-------------page- alimentacion---------------*/
 
 
-.card-1 div a{
-  text-decoration: none;
-}
-
-
-
-.card-1  img{
-  height: 40px;
-  margin: 10px;
-} */
-
-
-
-
-/*-------------baner--------------*/
-/* .baner{
-  background-image: url(../images/hero/karsten-winegeart-5PVXkqt2s9k-unsplash.jpg);
+.hero-alimentacion{
+  background-image: url(../images/page-alimentacion/hero/2149392632.jpg);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
-  height: 70vh;
-  justify-content: space-evenly;
-  align-items: center;
+  height: 70vh; 
+
+}
+
+.contenedor{
+  max-width: 1200px; 
+  margin: 20px auto;
+}
+
+
+
+.contenedor .contenedor-productos {
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
   
 }
 
-.col2{
-  grid-template-columns: repeat(2, 1fr);
-
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+.contenedor .contenedor-productos .product{
+  text-align: center;
+  background-color: hsl(57, 35%, 75%);
+  border-radius: 12px;
+  overflow: hidden;
+  height: 400px;
+  
+}
+.contenedor .contenedor-productos .product img{
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px 12px 0px 0px;
 }
 
-.col2 div{
-  background-color: #ffffff2f;
-  color: white;
-  border-radius: 10px;
-  height: 160px;
-  width:300px;
-  justify-content: center;
-  align-items: center;
-} */
+/*-------------Baner---------------*/
+
+.baner{
+  background-image: url(../images/banner/curious-cat-peering-from-white-backdrop.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 400px;
+  
+}
+
+
+/*-------------Trending---------------*/
+
+
+
+
+
+.trending {  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px 10px;
+  max-width: 900px;
+  margin: 0px auto;
+  grid-template-areas:
+    "card1 card2 card3"
+    "card4 card5 card3";
+}
+
+.card1 { 
+  grid-area: card1;
+  background-color: #1667F7;
+  height: 300px;
+
+}
+
+.card4 { grid-area: card4; }
+
+.card2 { grid-area: card2; }
+
+.card5 { grid-area: card5; }
+
+.card3 { grid-area: card3; }
+
+.trending div img{
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+}
