@@ -1,20 +1,19 @@
 /*sets globales*/
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
-.flex{
+.flex {
   display: flex;
 }
 
-.grid{
+.grid {
   display: grid;
 }
 
-body{
+body {
   background-image: url(../images/tarjeta/background\ 2.png);
   background-position: center;
   background-size: contain;
@@ -22,7 +21,7 @@ body{
 
 /*---------HEADER---------*/
 
-.navbar{
+.navbar {
   background-color: #f8f9fd;
   height: 60px;
   padding: 0.5rem;
@@ -30,122 +29,109 @@ body{
   border-radius: 14px;
 }
 
-
-.nav-item a{
-  color: #1667F7;
-  transition: 0.1s ;
-  
+.nav-item a {
+  color: #1667f7;
+  transition: 0.1s;
 }
 
-.nav-item a:hover{
-
+.nav-item a:hover {
   color: black;
-  border-bottom: 1px solid #1667F7;
+  border-bottom: 1px solid #1667f7;
 }
 
-
-.login-button{
-  background-color:#1667F7;
+.login-button {
+  background-color: #1667f7;
   color: white;
   padding: 8px 20px;
   border-radius: 50px;
   font-size: 14px;
   text-decoration: none;
-  transition: 0.3s background-color ;
+  transition: 0.3s background-color;
 }
 
-.login-button:hover{
-  background-color:white;
+.login-button:hover {
+  background-color: white;
   color: black;
-  border: solid 1px #1667F7;
+  border: solid 1px #1667f7;
 }
-
-
 
 /*-------------HERO-SECTION--------------*/
 
-
-
-.hero{
+.hero {
   width: 100vw;
   height: 80vh;
-  
+
   background-image: url(../images/hero/probar/pexels-tima-miroshnichenko-6235108.jpg);
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
   align-items: center;
   background-size: cover;
-  
 }
 .hero .titulo {
   margin-left: 300px;
 }
 
-.hero .titulo h1{
+.hero .titulo h1 {
   font-size: 48px;
   font-family: "Playfair Display", serif;
   font-style: italic;
   font-weight: 900;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.hero .titulo a{
+.hero .titulo a {
   font-family: "Playfair Display", serif;
   text-decoration: none;
-  background-color: #1667F7;
-  padding:  7px;
+  background-color: #1667f7;
+  padding: 7px;
   border-radius: 5px;
   color: white;
   transition: 0.3 background-color;
 }
 
-.hero .titulo a:hover{
-  background-color:white;
-  color: #1667F7;
+.hero .titulo a:hover {
+  background-color: white;
+  color: #1667f7;
 }
-
-
 
 /*-------------tarjetitas--------------*/
 
-.tarjetitas{
+.tarjetitas {
   height: 600px;
   justify-content: center;
   align-items: center;
   position: relative;
 }
 
-.tarjetitas div{
+.tarjetitas div {
   margin: 20px;
 }
 
-
-.columna-1{
-  grid-template-columns: repeat(2,1fr);
+.columna-1 {
+  grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
 }
-.columna-1 div{
+.columna-1 div {
   height: 180px;
   width: 160px;
   border-radius: 10px;
   box-shadow: 3px 3px 42px;
   margin: 8px;
   padding: 6px;
-  
 }
 
-.img1{
+.img1 {
   background-image: url(../images/tarjeta/cruz.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  color:black;
+  color: black;
   align-items: end;
 }
 
-.img2{
+.img2 {
   background-image: url(../images/tarjeta/diente.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -154,7 +140,7 @@ body{
   align-items: end;
 }
 
-.img3{
+.img3 {
   background-image: url(../images/tarjeta/pildora\ contorno.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -162,25 +148,22 @@ body{
   color: black;
   align-items: end;
 }
-.img4{
+.img4 {
   background-image: url(../images/tarjeta/hueso.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  color: black
-  
+  color: black;
 }
 
-
-
-.columna-2{
+.columna-2 {
   justify-content: center;
   align-items: center;
   width: 300px;
 }
 
-.columna-2 div a{
-  background-color: #1667F7;
+.columna-2 div a {
+  background-color: #1667f7;
   border-radius: 4px;
   text-decoration: none;
   color: white;
@@ -188,95 +171,86 @@ body{
 }
 
 /*-------------Galeria--------------*/
-.servicios{
+.servicios {
   justify-content: center;
   align-items: center;
   height: 400px;
 }
-.serv{
+.serv {
   width: 300px;
   margin: 30px;
   border-radius: 8px;
   overflow: hidden;
 }
 
-
-
-.servicios img{
+.servicios img {
   height: 300px;
   width: 250px;
   object-fit: cover;
   object-position: center;
   border-radius: 12px;
-  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
   margin: 10px;
-  
 }
 
-.serv h3{
+.serv h3 {
   display: flex;
   justify-content: center;
   background-color: #312722d0;
-  color: #FFFFFF;
-  
+  color: #ffffff;
 }
-
 
 /*-------------What---------------*/
 
-.what{
+.what {
   height: 800px;
   margin-top: 30px;
 }
 
-
-.tit{
+.tit {
   height: 300px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-
-.circulo img{
+.circulo img {
   height: 200px;
   width: 200px;
   object-position: center;
   object-fit: cover;
-  
 }
 
-.tar{
+.tar {
   justify-content: center;
   align-items: center;
   width: 100%;
 }
-.tar div{
-  
+.tar div {
   width: 200px;
-
 }
 
-.carta{
+.carta {
   margin: 0px 60px;
 }
 
-.circulo{
+.circulo {
   height: 200px;
   width: 200px;
   border-radius: 100px;
   overflow: hidden;
-  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
-
-
-
 
 /*-------------Log-Testimonios---------------*/
 
-.log-testimonios{
+.log-testimonios {
   background-image: url(../images/log-testimonios/2-removebg.png);
   background-position: center;
   background-size: cover;
@@ -287,15 +261,14 @@ box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15p
   position: relative;
 }
 
-.log-testimonios div a{
+.log-testimonios div a {
   text-decoration: none;
-  background-color: #1667F7;
+  background-color: #1667f7;
   color: white;
   padding: 6px;
   border-radius: 6px;
   font-size: 12px;
 }
-
 
 /*-------------Footer---------------*/
 footer {
@@ -311,45 +284,37 @@ footer {
 }
 
 .contacto {
-  
   margin-left: 15px;
   margin-top: 10px;
 }
 
-
 /*-------------page- alimentacion---------------*/
 
-
-.hero-alimentacion{
+.hero-alimentacion {
   background-image: url(../images/page-alimentacion/hero/2149392632.jpg);
   background-position: center;
   background-size: cover;
-  height: 70vh; 
-
+  height: 70vh;
 }
 
-.contenedor{
-  max-width: 1200px; 
+.contenedor {
+  max-width: 1200px;
   margin: 20px auto;
 }
 
-
-
 .contenedor .contenedor-productos {
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
-  
 }
 
-.contenedor .contenedor-productos .product{
+.contenedor .contenedor-productos .product {
   text-align: center;
   background-color: hsl(57, 35%, 75%);
   border-radius: 12px;
   overflow: hidden;
   height: 400px;
-  
 }
-.contenedor .contenedor-productos .product img{
+.contenedor .contenedor-productos .product img {
   max-width: 100%;
   height: auto;
   object-fit: cover;
@@ -358,26 +323,70 @@ footer {
 
 /*-------------Baner---------------*/
 
-.baner{
+.baner {
   background-image: url(../images/banner/curious-cat-peering-from-white-backdrop.png);
   background-size: contain;
   background-repeat: no-repeat;
   height: 400px;
-  
 }
-
 
 /*-------------Trending---------------*/
 
+.trending {
+  
+  max-width: 1200px;
+  margin: 20px auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr, 1fr;
+  gap: 10px;
+  grid-template-areas:
+    "card1 card2 card3"
+    "card4 card5 card3";
+}
+.trending .card1 {
+  grid-area: card1;
+}
+
+.trending .card2 {
+  grid-area: card2;
+}
+
+.trending .card3 {
+  grid-area: card3;
+}
+
+.trending .card4 {
+  grid-area: card4;
+}
+
+.trending .card5 {
+  grid-area: card5;
+}
 
 
 
 
-.trending {  display: grid;
+.trending .item{
+  position: relative;
+  text-align: center;
+  background-color: hsl(57, 35%, 75%);
+  
+  
+}
+.trending .item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+} 
+
+/* .trending {  display: grid;
   grid-template-columns: 1fr, 1fr, 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 10px 10px;
-  max-width: 900px;
+  grid-template-rows: 1fr, 1fr;
+  gap: 10px;
+  max-width: 1200px;
   margin: 0px auto;
   grid-template-areas:
     "card1 card2 card3"
@@ -386,9 +395,6 @@ footer {
 
 .card1 { 
   grid-area: card1;
-  background-color: #1667F7;
-  height: 300px;
-
 }
 
 .card4 { grid-area: card4; }
@@ -400,8 +406,9 @@ footer {
 .card3 { grid-area: card3; }
 
 .trending div img{
-  height: 250px;
+  max-width: 100%;
+  height: auto;
   object-fit: cover;
-  object-position: center;
-  overflow: hidden;
-}
+  
+  
+} */
