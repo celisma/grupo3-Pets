@@ -3,7 +3,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
+:root{
+  font-size: 62.5%;
+}
+
 
 .flex {
   display: flex;
@@ -23,28 +28,29 @@ body {
 
 .navbar {
   background-color: #f8f9fd;
-  height: 60px;
+  height: 8rem;
   padding: 0.5rem;
-  margin: 10px 12px;
-  border-radius: 14px;
+  margin: 1rem 1.2rem;
+  border-radius: 1.4rem;
 }
 
 .nav-item a {
   color: #1667f7;
   transition: 0.1s;
+  font-size: 2.2rem;
 }
 
 .nav-item a:hover {
   color: black;
-  border-bottom: 1px solid #1667f7;
+  border-bottom: .1rem solid #1667f7;
 }
 
 .login-button {
   background-color: #1667f7;
   color: white;
-  padding: 8px 20px;
-  border-radius: 50px;
-  font-size: 14px;
+  padding: .5rem .5rem;
+  border-radius: .5rem;
+  font-size: 2rem;
   text-decoration: none;
   transition: 0.3s background-color;
 }
@@ -52,14 +58,15 @@ body {
 .login-button:hover {
   background-color: white;
   color: black;
-  border: solid 1px #1667f7;
+  border: solid .1rem #1667f7;
 }
 
 /*-------------HERO-SECTION--------------*/
 
 .hero {
-  width: 100vw;
+  width: 90%;
   height: 80vh;
+  margin: 0px auto;
 
   background-image: url(../images/hero/probar/pexels-tima-miroshnichenko-6235108.jpg);
   background-repeat: no-repeat;
@@ -69,11 +76,11 @@ body {
   background-size: cover;
 }
 .hero .titulo {
-  margin-left: 300px;
+  margin-left: 30rem;
 }
 
 .hero .titulo h1 {
-  font-size: 48px;
+  font-size: 4.8rem;
   font-family: "Playfair Display", serif;
   font-style: italic;
   font-weight: 900;
@@ -84,8 +91,8 @@ body {
   font-family: "Playfair Display", serif;
   text-decoration: none;
   background-color: #1667f7;
-  padding: 7px;
-  border-radius: 5px;
+  padding: 1rem;
+  border-radius: .5rem;
   color: white;
   transition: 0.3 background-color;
 }
@@ -98,14 +105,14 @@ body {
 /*-------------tarjetitas--------------*/
 
 .tarjetitas {
-  height: 600px;
+  height: 60rem;
   justify-content: center;
   align-items: center;
   position: relative;
 }
 
 .tarjetitas div {
-  margin: 20px;
+  margin: 2rem;
 }
 
 .columna-1 {
@@ -114,12 +121,12 @@ body {
   align-items: center;
 }
 .columna-1 div {
-  height: 180px;
-  width: 160px;
-  border-radius: 10px;
-  box-shadow: 3px 3px 42px;
-  margin: 8px;
-  padding: 6px;
+  height: 18rem;
+  width: 16rem;
+  border-radius: 1rem;
+  box-shadow: .3rem .3rem 4.2rem;
+  margin: .8rem;
+  padding: .6rem;
 }
 
 .img1 {
@@ -159,36 +166,36 @@ body {
 .columna-2 {
   justify-content: center;
   align-items: center;
-  width: 300px;
+  width: 30rem;
 }
 
 .columna-2 div a {
   background-color: #1667f7;
-  border-radius: 4px;
+  border-radius: .4rem;
   text-decoration: none;
   color: white;
-  padding: 4px 8px;
+  padding: .4rem .8rem;
 }
 
 /*-------------Galeria--------------*/
 .servicios {
   justify-content: center;
   align-items: center;
-  height: 400px;
+  height: 40rem;
 }
 .serv {
-  width: 300px;
-  margin: 30px;
-  border-radius: 8px;
+  width: 30rem;
+  margin: 3rem;
+  border-radius: .8rem;
   overflow: hidden;
 }
 
 .servicios img {
-  height: 300px;
-  width: 250px;
+  height: 30rem;
+  width: 25rem;
   object-fit: cover;
   object-position: center;
-  border-radius: 12px;
+  border-radius: 1.2rem;
   -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
     5px 5px 15px 5px rgba(0, 0, 0, 0);
   box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
@@ -206,20 +213,20 @@ body {
 /*-------------What---------------*/
 
 .what {
-  height: 800px;
-  margin-top: 30px;
+  height: 80rem;
+  margin-top: 3rem;
 }
 
 .tit {
-  height: 300px;
+  height: 30rem;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
 .circulo img {
-  height: 200px;
-  width: 200px;
+  height: 20rem;
+  width: 20rem;
   object-position: center;
   object-fit: cover;
 }
@@ -230,17 +237,17 @@ body {
   width: 100%;
 }
 .tar div {
-  width: 200px;
+  width: 20rem;
 }
 
 .carta {
-  margin: 0px 60px;
+  margin: 0px 6rem;
 }
 
 .circulo {
-  height: 200px;
-  width: 200px;
-  border-radius: 100px;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 10rem;
   overflow: hidden;
   -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
     5px 5px 15px 5px rgba(0, 0, 0, 0);
@@ -255,7 +262,7 @@ body {
   background-position: center;
   background-size: cover;
   justify-content: start;
-  margin-left: 150px;
+  margin-left: 15rem;
   align-items: center;
   height: 40vh;
   position: relative;
@@ -265,9 +272,9 @@ body {
   text-decoration: none;
   background-color: #1667f7;
   color: white;
-  padding: 6px;
-  border-radius: 6px;
-  font-size: 12px;
+  padding: .6rem;
+  border-radius: .6rem;
+  font-size: 1.2rem;
 }
 
 /*-------------Footer---------------*/
@@ -279,13 +286,13 @@ footer {
 }
 
 .redes {
-  margin-left: 15px;
-  margin-top: 10px;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
 }
 
 .contacto {
-  margin-left: 15px;
-  margin-top: 10px;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
 }
 
 /*-------------page- alimentacion---------------*/
@@ -295,30 +302,32 @@ footer {
   background-position: center;
   background-size: cover;
   height: 70vh;
+  width: 90%;
+  margin: 0px auto;
 }
 
 .contenedor {
-  max-width: 1200px;
-  margin: 20px auto;
+  max-width: 120rem;
+  margin: 2rem auto;
 }
 
 .contenedor .contenedor-productos {
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  gap: 1rem;
 }
 
 .contenedor .contenedor-productos .product {
   text-align: center;
   background-color: hsl(57, 35%, 75%);
-  border-radius: 12px;
+  border-radius: 1.2rem;
   overflow: hidden;
-  height: 400px;
+  height: 40rem;
 }
 .contenedor .contenedor-productos .product img {
   max-width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 12px 12px 0px 0px;
+  border-radius: 1.2rem 1.2rem 0px 0px;
 }
 
 /*-------------Baner---------------*/
@@ -327,88 +336,43 @@ footer {
   background-image: url(../images/banner/curious-cat-peering-from-white-backdrop.png);
   background-size: contain;
   background-repeat: no-repeat;
-  height: 400px;
+  height: 40rem;
 }
 
 /*-------------Trending---------------*/
 
 .trending {
   
-  max-width: 1200px;
-  margin: 20px auto;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr, 1fr;
-  gap: 10px;
-  grid-template-areas:
-    "card1 card2 card3"
-    "card4 card5 card3";
-}
-.trending .card1 {
-  grid-area: card1;
+  max-width: 120rem;
+  margin: 2rem auto;
+  grid-template-rows: repeat(2,40rem);
+	grid-template-columns: repeat(3,1fr);
+	gap: 1rem;
 }
 
-.trending .card2 {
-  grid-area: card2;
+.trending .destacada{
+  background-image: url(../images/page-alimentacion/trending/2150565427.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-area: 1 / 3 / 3 / 4;
+  justify-content: end;
+  flex-direction: column;
+  
 }
-
-.trending .card3 {
-  grid-area: card3;
+.trending .destacada a{
+  margin-bottom: 5rem;
 }
-
-.trending .card4 {
-  grid-area: card4;
-}
-
-.trending .card5 {
-  grid-area: card5;
-}
-
-
-
 
 .trending .item{
-  position: relative;
   text-align: center;
-  background-color: hsl(57, 35%, 75%);
-  
+  overflow: hidden;
   
 }
 .trending .item img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
+  height: auto;
   width: 100%;
   object-fit: cover;
+  border-radius: 1.2rem;
 } 
 
-/* .trending {  display: grid;
-  grid-template-columns: 1fr, 1fr, 1fr;
-  grid-template-rows: 1fr, 1fr;
-  gap: 10px;
-  max-width: 1200px;
-  margin: 0px auto;
-  grid-template-areas:
-    "card1 card2 card3"
-    "card4 card5 card3";
-}
-
-.card1 { 
-  grid-area: card1;
-}
-
-.card4 { grid-area: card4; }
-
-.card2 { grid-area: card2; }
-
-.card5 { grid-area: card5; }
-
-.card3 { grid-area: card3; }
-
-.trending div img{
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-  
-  
-} */
