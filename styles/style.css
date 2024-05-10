@@ -6,6 +6,7 @@
   
 }
 :root{
+  font-family: sans-serif;
   font-size: 62.5%;
 }
 
@@ -64,7 +65,7 @@ body {
 /*-------------HERO-SECTION--------------*/
 
 .hero {
-  width: 90%;
+  width: 100%;
   height: 80vh;
   margin: 0px auto;
 
@@ -115,58 +116,58 @@ body {
   margin: 2rem;
 }
 
+/*-------------columna-1-------------*/
 .columna-1 {
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
 }
 .columna-1 div {
-  height: 18rem;
-  width: 16rem;
+  height: 20rem;
+  width: 18rem;
   border-radius: 1rem;
-  box-shadow: .3rem .3rem 4.2rem;
+  box-shadow: 3px 3px 13px 1px rgba(0, 0, 0, 1);
   margin: .8rem;
   padding: .6rem;
 }
 
-.img1 {
-  background-image: url(../images/tarjeta/cruz.png);
+.tarjetitas .item{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   color: black;
-  align-items: end;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.tarjetitas .item:nth-child(2){
+  color: #ffffff;
+}
+
+.img1 {
+  background-image: url(../images/tarjeta/cruz.png);
 }
 
 .img2 {
   background-image: url(../images/tarjeta/diente.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  color: #f8f9fd;
-  align-items: end;
 }
+
 
 .img3 {
   background-image: url(../images/tarjeta/pildora\ contorno.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  color: black;
-  align-items: end;
 }
 .img4 {
   background-image: url(../images/tarjeta/hueso.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  color: black;
 }
+
+
+/*-------------columna-2-------------*/
 
 .columna-2 {
   justify-content: center;
   align-items: center;
   width: 30rem;
+  font-size: 2rem;
 }
 
 .columna-2 div a {
@@ -175,7 +176,13 @@ body {
   text-decoration: none;
   color: white;
   padding: .4rem .8rem;
+
 }
+
+
+
+
+
 
 /*-------------Galeria--------------*/
 .servicios {
@@ -196,10 +203,7 @@ body {
   object-fit: cover;
   object-position: center;
   border-radius: 1.2rem;
-  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
-    5px 5px 15px 5px rgba(0, 0, 0, 0);
-  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
-    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 3px 3px 13px 1px rgba(0, 0, 0, 1);
   margin: 10px;
 }
 
@@ -210,11 +214,12 @@ body {
   color: #ffffff;
 }
 
-/*-------------What---------------*/
+/*-------------Why---------------*/
 
-.what {
+.why {
   height: 80rem;
   margin-top: 3rem;
+  font-size: 2.6rem;
 }
 
 .tit {
@@ -243,16 +248,15 @@ body {
 .carta {
   margin: 0px 6rem;
 }
-
+.texto{
+  margin-top: 3rem;
+}
 .circulo {
   height: 20rem;
   width: 20rem;
   border-radius: 10rem;
   overflow: hidden;
-  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
-    5px 5px 15px 5px rgba(0, 0, 0, 0);
-  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
-    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 3px 3px 13px 1px rgba(0, 0, 0, 1);
 }
 
 /*-------------Log-Testimonios---------------*/
@@ -261,10 +265,9 @@ body {
   background-image: url(../images/log-testimonios/2-removebg.png);
   background-position: center;
   background-size: cover;
-  justify-content: start;
-  margin-left: 15rem;
+  margin-left: 55rem;
   align-items: center;
-  height: 40vh;
+  height: 30rem;
   position: relative;
 }
 
@@ -274,27 +277,42 @@ body {
   color: white;
   padding: .6rem;
   border-radius: .6rem;
-  font-size: 1.2rem;
+  font-size: 3rem;
 }
 
 /*-------------Footer---------------*/
-footer {
-  border-top: solid black 1px;
-  border-bottom: 0px;
-  background-color: #242424;
-  color: white;
+
+footer{
+  background-color: rgba(140, 147, 153, 0.56);
 }
 
-.redes {
-  margin-left: 1.5rem;
-  margin-top: 1rem;
+footer .contenido{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+  max-width: 120rem;
+  margin: 0 auto;
 }
 
-.contacto {
-  margin-left: 1.5rem;
-  margin-top: 1rem;
+footer .contenido .box h4{
+  padding: 0.5rem 0;
+  font-size: 2.5rem;
 }
 
+
+footer .contenido .box a{
+  display: block;
+  padding: 0.5rem 0;
+  font-size: 2.5rem;
+  color: black;
+  text-decoration: none;
+  
+}
+
+
+footer .contenido .box li{
+  list-style: none;
+}
 /*-------------page- alimentacion---------------*/
 
 .hero-alimentacion {
