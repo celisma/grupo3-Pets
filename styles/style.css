@@ -269,7 +269,7 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   align-items: center;
-  height: 40rem;
+  height: 20rem;
   max-width: 80%;
   margin: 8rem auto;
   border-radius: 8rem;
@@ -288,6 +288,41 @@ body {
   border-radius: .6rem;
   font-size: 3rem;
 
+}
+/*-------------Acordeon---------------*/
+
+.contenedor-acordeon{
+  background-image: url(../images/banner/33.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  background-color:#f9f5eace;
+  max-width: 120rem;
+  margin: 10rem auto;
+  border-radius: 1rem;
+}
+
+.acordeon {
+  max-width: 40rem;
+  padding: 4rem 0;
+ margin: 0 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 2rem;
+  
+}
+
+.acordeon summary{
+  background-color: #85c0e569;
+  padding: 1rem;
+  font-size: 2rem;
+  border-radius: .7rem;
+  list-style-image: url(../images/Web/icons8-más-2-matemáticas-ios-17-filled-16.png);
+  cursor: pointer;
+}
+.acordeon details p{
+  padding: 1rem;
 }
 
 /*-------------Footer---------------*/
@@ -376,7 +411,7 @@ footer .contenido .box li{
   background-size: cover;
   background-repeat: no-repeat; 
   background-position: center;
-  height: 40rem;
+  height: 20rem;
   width: 80%;
   margin: 8rem auto;
   border-radius: 8rem;
