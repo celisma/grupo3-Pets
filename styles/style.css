@@ -218,16 +218,19 @@ body {
 /*-------------Why---------------*/
 
 .why {
+  
   height: 80rem;
   margin-top: 3rem;
   font-size: 2.6rem;
+  
 }
 
 .tit {
+  
   height: 30rem;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
 .circulo img {
@@ -463,3 +466,77 @@ footer .contenido .box li{
   border-radius: 1.2rem;
 } 
 
+
+
+/*-------------Media-Queries---------------*/
+
+@media  (max-width:1200px){
+
+.servicios{
+
+  display: grid;
+  grid-template-columns: repeat(2,25rem);
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  
+  margin: 0 auto;
+}
+  
+.tit{
+  margin-top: 30rem;
+}
+}
+
+
+@media(max-width:920px){
+
+  .carta:last-child{
+    display: none;
+  }
+}
+@media(max-width:700px){
+
+  .tarjetitas .columna-1{
+    display: none;
+  }
+}
+
+@media(max-width:600px){
+
+
+  .hero .titulo {
+    margin-left: 10rem;
+    
+  }
+
+
+  
+
+  .carta:first-child{
+    display: none;
+  }
+
+  
+  .servicios div:nth-child(3){
+    display: none;
+  }
+  .servicios div:last-child{
+    display: none;
+  }
+  .servicios{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+  }
+
+  .tit{
+    margin-top: 10rem;
+  }
+
+
+
+  .log-testimonios div{
+    margin-left: auto;
+  }
+}
