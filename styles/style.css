@@ -464,10 +464,10 @@ footer .contenido{
   border-radius: 2rem;
 }
 .item img {
-  height: 80%;
+  height: 70%;
   width: 100%;
   object-fit: cover;
-  object-position: top;
+  object-position: center;
   border-radius: 2rem 2rem 0 0;
 } 
 
@@ -497,6 +497,14 @@ footer .contenido{
 @media(max-width:920px){
 
   .carta:last-child{
+    display: none;
+  }
+
+  .contenedor-tendencias {
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-auto-rows: 30rem;
+  }
+  .destacada{
     display: none;
   }
 }
@@ -544,4 +552,7 @@ footer .contenido{
   .log-testimonios div{
     margin-left: auto;
   }
+
+
+ 
 }
