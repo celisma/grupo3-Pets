@@ -3,12 +3,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
+
 :root{
   font-size: 62.5%;
 }
-
 
 .flex {
   display: flex;
@@ -25,7 +24,6 @@ body {
 }
 
 /*---------HEADER---------*/
-
 .navbar {
   background-color: #FFFFFF;
   height: 8rem;
@@ -33,6 +31,7 @@ body {
   margin: 1rem 1.2rem;
   border-radius: 1.4rem;
 }
+
 .navbar img{
   height: 8rem;
   border-radius: 2.5rem;
@@ -66,12 +65,10 @@ body {
 }
 
 /*-------------HERO-SECTION--------------*/
-
 .hero {
   width: 100%;
   height: 80vh;
   margin: 0px auto;
-
   background-image: url(../images/hero/probar/pexels-tima-miroshnichenko-6235108.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -79,6 +76,7 @@ body {
   align-items: center;
   background-size: cover;
 }
+
 .hero .titulo {
   margin-left: 30rem;
 }
@@ -107,7 +105,6 @@ body {
 }
 
 /*-------------tarjetitas--------------*/
-
 .tarjetitas {
   height: 60rem;
   justify-content: center;
@@ -125,6 +122,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .columna-1 div {
   height: 20rem;
   width: 18rem;
@@ -163,9 +161,7 @@ body {
   background-image: url(../images/tarjeta/hueso.png);
 }
 
-
 /*-------------columna-2-------------*/
-
 .columna-2 {
   justify-content: center;
   align-items: center;
@@ -179,13 +175,7 @@ body {
   text-decoration: none;
   color: white;
   padding: .4rem .8rem;
-
 }
-
-
-
-
-
 
 /*-------------Galeria--------------*/
 .servicios {
@@ -193,6 +183,7 @@ body {
   align-items: center;
   height: 40rem;
 }
+
 .serv {
   width: 30rem;
   margin: 3rem;
@@ -218,17 +209,13 @@ body {
 }
 
 /*-------------Why---------------*/
-
 .why {
-  
   height: 80rem;
   margin-top: 3rem;
   font-size: 2.6rem;
-  
 }
 
 .tit {
-  
   height: 30rem;
   flex-direction: column;
   justify-content: center;
@@ -247,6 +234,7 @@ body {
   align-items: center;
   width: 100%;
 }
+
 .tar div {
   width: 20rem;
 }
@@ -254,9 +242,11 @@ body {
 .carta {
   margin: 0px 6rem;
 }
+
 .texto{
   margin-top: 3rem;
 }
+
 .circulo {
   height: 20rem;
   width: 20rem;
@@ -266,7 +256,6 @@ body {
 }
 
 /*-------------Log-Testimonios---------------*/
-
 .log-testimonios {
   background-color: #85C1E5;
   background-image: url(../images/banner/22.png);
@@ -284,7 +273,6 @@ body {
   margin-left: 20rem;
 }
 
-
 .log-testimonios div a {
   text-decoration: none;
   background-color: #1667f7;
@@ -292,10 +280,9 @@ body {
   padding: .6rem;
   border-radius: .6rem;
   font-size: 3rem;
-
 }
-/*-------------Acordeon---------------*/
 
+/*-------------Acordeon---------------*/
 .contenedor-acordeon{
   background-image: url(../images/banner/33.png);
   background-repeat: no-repeat;
@@ -331,7 +318,6 @@ body {
 }
 
 /*-------------Footer---------------*/
-
 footer{
   background-color:#212529;
   color: #AEB2B6;
@@ -342,7 +328,6 @@ footer .contenido .box{
   align-items: center;
 }
 
-
 footer .contenido .box a{
   margin: .5rem;
 }
@@ -351,6 +336,7 @@ footer .contenido .box p{
   margin: 1rem;
   font-size: 1.5rem;
 }
+
 footer .contenido .box img{
   border-radius: 2.5rem;
   transition: .5s;
@@ -359,6 +345,7 @@ footer .contenido .box img{
 footer .contenido .box img:hover{
   scale: 1.2;
 }
+
 footer .contenido{
   max-width: 120rem;
   margin: 0 auto;
@@ -366,8 +353,7 @@ footer .contenido{
   padding: 1rem;
 }
 
-/*-------------page- alimentacion---------------*/
-
+/*-------------Page Alimentacion---------------*/
 .hero-alimentacion {
   background-image: url(../images/page-alimentacion/hero/2149392632.jpg);
   background-position: center;
@@ -386,6 +372,7 @@ footer .contenido{
   font-size: 4rem;
   color: #ffffff;
 }
+
 /*-------------productos---------------*/
 .contenedor {
   max-width: 100rem;
@@ -411,7 +398,6 @@ footer .contenido{
 }
 
 /*-------------Baner---------------*/
-
 .baner {
   background-image: url(../images/banner/1.jpg);
   background-size: cover;
@@ -452,8 +438,8 @@ footer .contenido{
   grid-area: 1 / 3 / 3 / 4;
   justify-content: end;
   flex-direction: column;
-  
 }
+
 .contenedor-tendencias .destacada a{
   margin-bottom: 5rem;
 }
@@ -463,6 +449,7 @@ footer .contenido{
   text-align: center;
   border-radius: 2rem;
 }
+
 .item img {
   height: 70%;
   width: 100%;
@@ -471,31 +458,25 @@ footer .contenido{
   border-radius: 2rem 2rem 0 0;
 } 
 
-
-
 /*-------------Media-Queries---------------*/
-
 @media  (max-width:1200px){
+  .servicios{
 
-.servicios{
-
-  display: grid;
-  grid-template-columns: repeat(2,25rem);
-  gap: 2rem;
-  justify-content: center;
-  align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2,25rem);
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 0 auto;
+  }
   
-  margin: 0 auto;
+  .tit{
+    margin-top: 30rem;
+  }
 }
-  
-.tit{
-  margin-top: 30rem;
-}
-}
-
 
 @media(max-width:920px){
-
   .carta:last-child{
     display: none;
   }
@@ -505,38 +486,33 @@ footer .contenido{
     grid-auto-rows: 30rem;
   }
   .destacada{
-    display: none;
+  display: none;
   }
 }
-@media(max-width:700px){
 
+@media(max-width:700px){
   .tarjetitas .columna-1{
     display: none;
   }
 }
 
 @media(max-width:600px){
-
-
   .hero .titulo {
     margin-left: 10rem;
-    
   }
-
-
-  
 
   .carta:first-child{
     display: none;
   }
-
-  
+ 
   .servicios div:nth-child(1){
     display: none;
   }
+
   .servicios div:last-child{
     display: none;
   }
+
   .servicios{
     display: flex;
     flex-direction: column;
@@ -547,12 +523,202 @@ footer .contenido{
     margin-top: 10rem;
   }
 
-
-
   .log-testimonios div{
     margin-left: auto;
   }
-
-
- 
 }
+
+/*=================Page Peluqueria================*/
+.tit_pelu{
+  text-align: center;
+  font-family: sans-serif;
+  color: #c5a506;
+  font-weight:bold;
+  padding-top:100px ;
+}
+
+.pelu{
+  justify-content: space-evenly;
+  padding: 50px ;
+}
+
+.pelu .card{
+  transition: 300ms;
+  position: relative;
+  cursor: pointer;
+}
+
+.pelu .card:hover{
+  transform:scale(1,1.2) ;
+}
+.card h5{
+  text-align: center;
+  font-weight:normal ;
+}
+
+#tit-pelu{
+  text-align: center;
+  font-weight: bolder;
+  color: #c5a506;
+}
+
+.sec1{
+  justify-content: space-around;
+  font-size: large;
+  margin: 2px 60px ;
+  padding: 40px;
+}
+
+.col1{
+  padding: 10px;
+}
+
+.col2 img{
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+  
+}
+
+.col3{
+  padding: 10px;
+}
+
+.sec2{
+  justify-content: center;
+}
+
+.sec2 img{
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.sec2 .col-varie h2{
+  color: #c5a506;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sec2 .col-varie h3{
+  text-align: center;
+  font-weight: bold;
+}
+
+.sec2 .col-varie ul{
+  font-size: large;
+  list-style-type: none;
+}
+
+article h2{
+  color: #c5a506;
+  font-weight: bold;
+  text-align: center;
+  margin: 30px 50px;
+}
+
+article h3{
+  text-align: center;
+  font-weight: bold;
+}
+
+article p{
+  font-size: large;
+  margin: 30px 50px;
+}
+
+/***** MEDIA QUERY PAGE PELUQUERIA***/
+  
+           /* Large devices (desktops, 992px and up) */
+     @media (min-width: 992px) {
+      
+    }
+
+          
+         /* Medium devices (tablets, 768px and up) */
+         /*TALET*/
+     @media (max-width: 768px) { 
+      .pelu{
+        justify-content: center;
+       gap: 3px;
+      }
+           
+      .col2 img{
+        display: none;
+      }
+
+      .sec2{
+        justify-content: center;
+        margin: 40px;
+      }
+      
+      .sec2 img{
+        width: 200px;
+        height: 200px;
+        margin: 40px;
+        border-radius: 30px;
+      }
+      
+      .sec2 .col-varie h2{
+        color: #c5a506;
+        font-weight: bold;
+        text-align: center;
+      }
+      
+      .sec2 .col-varie h3{
+        text-align: center;
+        font-weight: bold;
+      }
+      
+      .sec2 .col-varie ul{
+        font-size: large;
+        list-style-type: none;
+      }
+     }
+
+     
+      /* Phones, 576px) */
+     @media (max-width: 576px) { 
+        .pelu{
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 45px;
+        gap: 40px;
+      }
+          
+      #tit-pelu{
+        text-align: center;
+        font-weight: bolder;
+        color: #c5a506;
+      }
+
+      .sec2{
+        justify-content: center;
+        flex-direction: column;
+      }
+      
+      .sec2 img{
+        width: 200px;
+        height: 200px;
+        margin:  auto 30px;
+        border-radius: 20px;
+      }
+      
+      .sec2 .col-varie h2{
+        color: #c5a506;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+      .sec2 .col-varie h3{
+        text-align: center;
+        font-weight: bold;
+      }
+      
+      .sec2 .col-varie ul{
+        font-size: large;
+        list-style-type: none;
+      }
+     }
