@@ -500,9 +500,15 @@ footer .contenido{
 .contene{
   display: grid;
   max-width: 120rem;
-  margin: 0 auto;
-  grid-template-columns: repeat(2, 1fr);
+  margin: 10rem auto;
+  grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+  gap: 1rem;
+  justify-content: center;
   align-items: center;
+}
+
+.contene  div{
+  margin: 2rem;
 }
 
 .box-info .mapa{
@@ -518,7 +524,6 @@ footer .contenido{
   width: 500px;
   max-width: 100%;
   margin:auto;
-  margin-top:100px;
   padding:20px;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
   position: relative;
